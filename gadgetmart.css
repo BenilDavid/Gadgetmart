@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #f22712;
+    height: 15vh;
+    width: 100%;
+}
+.collapse{
+    position: relative;
+    margin-right: 20%;
+}
+.navbar-nav{
+    background-color: #ac281a;
+    height: 60px;
+    width: 400px;
+    position: absolute;
+    right: 0;
+}
+
+.logo{
+    margin-left: 20%;
+}
+
+.collapse ul li a{
+    color: white;
+    
+}

@@ -1,0 +1,65 @@
+$color:#fff;
+$headercolor: #f22712;
+
+// HEADER .......................................
+.header{
+    position: fixed;
+    background-color: $headercolor;
+    height: auto;
+    width: 100%;
+    .nav-link{
+        color: $color;
+    }
+}
+ .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+ }
+#home:hover .dropdown-content{
+    display: block;
+}
+// CAROUSEL ....................................
+.carousel-image{
+    width: 100%;
+  
+}
+
+// STEPS .......................................
+.steps{
+    margin: 50px 0px;
+
+    .step{
+        position: relative;
+        z-index: -1;
+    }
+    #within{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+    .step-text{
+        position: absolute;
+        top: 10px;
+        left: 120px;
+    }
+}
+
+// IMAGES ......................................
+.just-img{
+    margin: 0px 200px;
+    .row{
+        float: left;
+        margin: auto auto;
+        
+        .img{
+            width: 33.3%;
+            padding: 0px 30px;
+            margin: 0;
+        }
+    }
+}

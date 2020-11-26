@@ -1,0 +1,77 @@
+$color:#fff;
+$headercolor: #f22712;
+
+// HEADER .......................................
+.header{
+    position: fixed;
+    background-color: $headercolor;
+    height: auto;
+    width: 100%;
+    .nav-link{
+        color: $color;
+    }
+}
+//  .dropdown-content {
+//         display: none;
+//         position: absolute;
+//         background-color: #f9f9f9;
+//         min-width: 160px;
+//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//         padding: 12px 16px;
+//         z-index: 1;
+//  }
+// #home:hover .dropdown-content{
+//     display: block;
+// }
+// CAROUSEL ....................................
+.carousel-image{
+    width: 100%;
+  
+}
+
+// STEPS .......................................
+
+    .box {
+        background-color: #f4f4f4;
+        display: block;
+        width: 230px;
+        height: 80px;
+        border-radius: 50px;
+        box-shadow: -2px 4px 3px 3px rgba(63, 48, 48, 0.1);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+
+        #within {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+
+        .step-text {
+            position: absolute;
+            top: 5px;
+            left: 100px;
+        }
+    }
+
+
+// IMAGES ......................................
+// .just-img{
+//     margin: 0px 200px;
+//     .row{
+//         float: left;
+//         margin: auto auto;
+        
+//         .img{
+//             width: 33.3%;
+//             padding: 0px 30px;
+//             margin: 0;
+//         }
+//     }
+// }
+.img{
+    margin-bottom: 30px;
+}
+
+

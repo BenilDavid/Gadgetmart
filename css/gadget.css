@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  background-color: #f22712;
+  height: auto;
+  width: 100%;
+}
+
+.header .nav-link {
+  color: #fff;
+}
+
+.carousel-image {
+  width: 100%;
+}
+
+.box {
+  background-color: #f4f4f4;
+  display: block;
+  width: 230px;
+  height: 80px;
+  border-radius: 50px;
+  -webkit-box-shadow: -2px 4px 3px 3px rgba(63, 48, 48, 0.1);
+          box-shadow: -2px 4px 3px 3px rgba(63, 48, 48, 0.1);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.box #within {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.box .step-text {
+  position: absolute;
+  top: 5px;
+  left: 100px;
+}
+
+.img {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=gadget.css.map */

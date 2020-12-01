@@ -1,13 +1,22 @@
+// COLORS .......................................
+
 $color:#fff;
 $red: #f22712;
-$darkred: #83251b;
+$darkred: #ad2718;
 $grey: #eaeaea;
+
+// FONTS ........................................
+
+@font-face {
+    font-family: "elephanti";
+    src: url(../Fonts/ELEPHNTI.TTF);
+}
 
 body {
     box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -16,7 +25,7 @@ body {
 .header {
     position: fixed;
     background-color: $red;
-    height: auto;
+    height: 110px;
     width: 100%;
 
     .collapse {
@@ -25,18 +34,40 @@ body {
     }
 
     .nav-link {
+        border-right: 1px solid $darkred;
+        font-size: 20px;
         color: $color;
-
-        :hover {
+        &:hover {
             background-color: $darkred;
         }
     }
 }
 
 // CAROUSEL ....................................
-.carousel-image {
-    width: 100%;
 
+.carousel-inner {
+    .carousel-item {
+        position: relative;
+        #textbox{
+            position: absolute;
+            top: 40%;
+            left: 22%;
+        }
+        .carousel-heading {
+            // position: absolute;
+            // top: 30%;
+            // left: 22%;
+            font-family: 'elephanti';
+            font-size: 55px;
+            font-weight: bolder;
+        }
+      
+        p {
+            word-wrap: break-word;
+           
+            font-size: 22px;
+        }
+    }
 }
 
 // STEPS .......................................
@@ -50,6 +81,7 @@ body {
     box-shadow: -2px 4px 3px 3px rgba(63, 48, 48, 0.1);
     margin-bottom: 50px;
     position: relative;
+
     #within {
         position: absolute;
         top: 20px;
@@ -57,6 +89,7 @@ body {
     }
 
     .step-text {
+        font-size: 18px;
         display: inline;
         text-align: center;
         padding-left: 20px;
@@ -163,6 +196,13 @@ body {
                 top: 25px;
                 left: 100px;
             }
+
+            .over-text {
+                font-size: 30px;
+                position: absolute;
+                top: 30%;
+                left: 70%;
+            }
         }
     }
 }
@@ -224,13 +264,24 @@ body {
 
 .selling-cat {
     background-color: $grey;
-height: 900px;
+    height: 900px;
+
     .containerr {
         .selection {
-            .col {
-                width: 300px;
-                height: 100px;
-                background-color: $color;
+            .categories {
+                li {
+                    text-align: center;
+                    list-style: none;
+                    display: inline-block;
+                    width: 19%;
+                    padding: 30px;
+                    background-color: $color;
+font-size: 20px;
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
             }
         }
     }
@@ -238,16 +289,40 @@ height: 900px;
 
 // PARALAX IMAGE .........................................................
 
-.paralax{
+#paralax {
     width: 100%;
-    height: 600px;
-    background-image:linear-gradient(rgba(255,0,0,0.7)), url(../Assets/Paralax_image_Black&white.png);
+    height: 900px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.7)), url(../Assets/Paralax_image_Black&white.png);
     background-position: center;
-background-attachment: fixed;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     // position: fixed;
     // top: 0;
     // left: 0;
-    position: relative; 
+    position: relative;
+ .prlx-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .prlx-head{
+        color: $color;
+        font-size: 140px;
+        font-weight: 700;
+    }
+    .prlx-md{
+
+        color: rgba(139, 18, 18, 1);
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .prlx-text{
+        color: $color;
+font-size: 25px;
+font-weight: 400;
+    }
+ }
 }
+
+

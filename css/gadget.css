@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "elephanti";
+  src: url(../Fonts/ELEPHNTI.TTF);
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,7 +16,7 @@ body {
 .header {
   position: fixed;
   background-color: #f22712;
-  height: auto;
+  height: 110px;
   width: 100%;
 }
 
@@ -21,15 +26,34 @@ body {
 }
 
 .header .nav-link {
+  border-right: 1px solid #ad2718;
+  font-size: 20px;
   color: #fff;
 }
 
-.header .nav-link :hover {
-  background-color: #83251b;
+.header .nav-link:hover {
+  background-color: #ad2718;
 }
 
-.carousel-image {
-  width: 100%;
+.carousel-inner .carousel-item {
+  position: relative;
+}
+
+.carousel-inner .carousel-item #textbox {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+}
+
+.carousel-inner .carousel-item .carousel-heading {
+  font-family: 'elephanti';
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+.carousel-inner .carousel-item p {
+  word-wrap: break-word;
+  font-size: 22px;
 }
 
 .box {
@@ -51,6 +75,7 @@ body {
 }
 
 .box .step-text {
+  font-size: 18px;
   display: inline;
   text-align: center;
   padding-left: 20px;
@@ -127,6 +152,14 @@ body {
   left: 100px;
 }
 
+.containerr .row .col1 .over-text,
+.containerr .row .col2 .over-text {
+  font-size: 30px;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
 @media only screen and (min-width: 1200px) {
   .containerr,
   .containerr-lg,
@@ -179,15 +212,24 @@ body {
   height: 900px;
 }
 
-.selling-cat .containerr .selection .col {
-  width: 300px;
-  height: 100px;
+.selling-cat .containerr .selection .categories li {
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  width: 19%;
+  padding: 30px;
   background-color: #fff;
+  font-size: 20px;
 }
 
-.paralax {
+.selling-cat .containerr .selection .categories li:hover {
+  color: white;
+  background-color: black;
+}
+
+#paralax {
   width: 100%;
-  height: 600px;
+  height: 900px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0.7))), url(../Assets/Paralax_image_Black&white.png);
   background-image: linear-gradient(rgba(255, 0, 0, 0.7)), url(../Assets/Paralax_image_Black&white.png);
   background-position: center;
@@ -195,5 +237,31 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#paralax .prlx-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#paralax .prlx-content .prlx-head {
+  color: #fff;
+  font-size: 140px;
+  font-weight: 700;
+}
+
+#paralax .prlx-content .prlx-md {
+  color: #8b1212;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+#paralax .prlx-content .prlx-text {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=gadget.css.map */

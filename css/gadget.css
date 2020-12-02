@@ -26,8 +26,7 @@ body {
 }
 
 .header .nav-link {
-  border-right: 1px solid #ad2718;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
 }
 
@@ -52,6 +51,7 @@ body {
 }
 
 .carousel-inner .carousel-item p {
+  width: 80%;
   word-wrap: break-word;
   font-size: 22px;
 }
@@ -62,8 +62,8 @@ body {
   width: 330px;
   height: 110px;
   border-radius: 50px;
-  -webkit-box-shadow: -2px 4px 3px 3px rgba(63, 48, 48, 0.1);
-          box-shadow: -2px 4px 3px 3px rgba(63, 48, 48, 0.1);
+  -webkit-filter: drop-shadow(-3px 3px 2px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(-3px 3px 2px rgba(0, 0, 0, 0.3));
   margin-bottom: 50px;
   position: relative;
 }
@@ -96,6 +96,8 @@ body {
   position: relative;
   width: 200px;
   margin-bottom: 50px;
+  -webkit-filter: drop-shadow(7px 5px 3px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(7px 5px 3px rgba(0, 0, 0, 0.5));
 }
 
 .containerr #box #content {
@@ -104,6 +106,7 @@ body {
   height: 60px;
   background: #f22712;
   -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 }
 
 .containerr #box #content .text-content {
@@ -113,18 +116,6 @@ body {
   color: #fff;
   font-weight: lighter;
   font-size: 24px;
-}
-
-.containerr #box #shadow {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  background: rgba(0, 0, 0, 0.3);
-  width: 350px;
-  height: 60px;
-  left: 5px;
-  top: 5px;
-  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 }
 
 .containerr .row .col1,
@@ -229,7 +220,7 @@ body {
 
 #paralax {
   width: 100%;
-  height: 900px;
+  height: 800px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0.7))), url(../Assets/Paralax_image_Black&white.png);
   background-image: linear-gradient(rgba(255, 0, 0, 0.7)), url(../Assets/Paralax_image_Black&white.png);
   background-position: center;
@@ -240,6 +231,7 @@ body {
 }
 
 #paralax .prlx-content {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -249,13 +241,13 @@ body {
 
 #paralax .prlx-content .prlx-head {
   color: #fff;
-  font-size: 140px;
+  font-size: 120px;
   font-weight: 700;
 }
 
 #paralax .prlx-content .prlx-md {
   color: #8b1212;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -263,5 +255,114 @@ body {
   color: #fff;
   font-size: 25px;
   font-weight: 400;
+}
+
+#top-kids .kids-box {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#top-kids .kids-box .kids-content {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+
+#top-kids .kids-box .kids-content .kids-text {
+  color: white;
+  font-family: 'elephanti';
+  font-size: 40px;
+}
+
+#top-kids .kids-box .kids-content p {
+  width: 70%;
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+}
+
+#footer .row {
+  width: 100%;
+}
+
+#footer .row .col-1 {
+  height: 450px;
+  background-color: #f6f6f6;
+}
+
+#footer .row .col-1 .cont {
+  width: 80%;
+  margin: auto auto;
+}
+
+#footer .row .col-1 .cont .col1-text1 {
+  padding-bottom: 20px;
+}
+
+#footer .row .col-1 .cont .call {
+  height: 80px;
+}
+
+#footer .row .col-1 .cont .call .help {
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer .row .col-1 .cont .footer-media img {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+
+#footer .row .col-1 .cont .copy {
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+
+#footer .row .col-2 {
+  height: 450px;
+  background-color: #efefef;
+}
+
+#footer .row .col-2 .col2-1 ul h6 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .row .col-2 .col2-1 ul li {
+  list-style-type: none;
+}
+
+#footer .row .col-2 .col2-2 ul h6 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .row .col-2 .col2-2 ul li {
+  list-style-type: none;
+}
+
+#footer .row .col-2 .col2-3 h6 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .row .col-2 .col2-3 .newsletter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer .row .col-2 .col2-3 .newsletter input {
+  padding: 10px 10px;
+  width: 50%;
+}
+
+#footer .row .col-2 .col2-3 .newsletter button {
+  background-color: #f22712;
+  padding: 10px 10px;
+  border: none;
+  color: #fff;
 }
 /*# sourceMappingURL=gadget.css.map */

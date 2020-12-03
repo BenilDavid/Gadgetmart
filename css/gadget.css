@@ -18,6 +18,8 @@ body {
   background-color: #f22712;
   height: 110px;
   width: 100%;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.22);
 }
 
 .header .collapse {
@@ -32,6 +34,12 @@ body {
 
 .header .nav-link:hover {
   background-color: #ad2718;
+}
+
+.carousel-inner {
+  z-index: -1;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-inner .carousel-item {
@@ -125,6 +133,12 @@ body {
   background-color: #eaeaea;
 }
 
+.containerr .row .col1:hover,
+.containerr .row .col2:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .containerr .row .col1 .blue-triangle,
 .containerr .row .col2 .blue-triangle {
   position: relative;
@@ -161,30 +175,6 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 540px;
-  }
-}
-
 .containerr,
 .containerr-fluid,
 .containerr-lg,
@@ -200,7 +190,25 @@ body {
 
 .selling-cat {
   background-color: #eaeaea;
-  height: 900px;
+  height: 1100px;
+}
+
+.selling-cat .containerr .selection .row .cat1,
+.selling-cat .containerr .selection .row .cat2,
+.selling-cat .containerr .selection .row .cat3,
+.selling-cat .containerr .selection .row .cat4 {
+  display: table;
+  overflow: hidden;
+}
+
+.selling-cat .containerr .selection .row .cat1 div,
+.selling-cat .containerr .selection .row .cat2 div,
+.selling-cat .containerr .selection .row .cat3 div,
+.selling-cat .containerr .selection .row .cat4 div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
 }
 
 .selling-cat .containerr .selection .categories li {
@@ -218,9 +226,98 @@ body {
   background-color: black;
 }
 
+.flip {
+  position: relative;
+}
+
+.flip > .front,
+.flip > .back {
+  display: block;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
+
+.flip > .front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.flip:hover > .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip:hover > .back {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.flip.flip-vertical > .back {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.flip.flip-vertical:hover > .front {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.flip.flip-vertical:hover > .back {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 1em;
+  width: 400px;
+  height: 400px;
+}
+
+.flip > .front,
+.flip > .back {
+  display: block;
+  color: black;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 220px;
+  padding: 1em 2em;
+  background: #313131;
+  border-radius: 10px;
+}
+
+.flip > .front ul li,
+.flip > .back ul li {
+  list-style: none;
+  font-size: 0.9125rem;
+  line-height: 160%;
+  color: #999;
+}
+
 #paralax {
   width: 100%;
-  height: 800px;
+  height: 750px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0.7))), url(../Assets/Paralax_image_Black&white.png);
   background-image: linear-gradient(rgba(255, 0, 0, 0.7)), url(../Assets/Paralax_image_Black&white.png);
   background-position: center;
@@ -262,6 +359,11 @@ body {
   padding-bottom: 20px;
 }
 
+#top-kids .kids-box img:hover {
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.22);
+}
+
 #top-kids .kids-box .kids-content {
   position: absolute;
   top: 40%;
@@ -286,7 +388,7 @@ body {
 }
 
 #footer .row .col-1 {
-  height: 450px;
+  height: 400px;
   background-color: #f6f6f6;
 }
 
@@ -310,19 +412,17 @@ body {
 }
 
 #footer .row .col-1 .cont .footer-media img {
-  text-align: center;
   width: 30px;
   height: 30px;
 }
 
 #footer .row .col-1 .cont .copy {
+  padding-top: 30px;
   text-align: center;
-  position: absolute;
-  bottom: 30px;
 }
 
 #footer .row .col-2 {
-  height: 450px;
+  height: 400px;
   background-color: #efefef;
 }
 
@@ -335,6 +435,11 @@ body {
   list-style-type: none;
 }
 
+#footer .row .col-2 .col2-1 ul li a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
 #footer .row .col-2 .col2-2 ul h6 {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -342,6 +447,11 @@ body {
 
 #footer .row .col-2 .col2-2 ul li {
   list-style-type: none;
+}
+
+#footer .row .col-2 .col2-2 ul li a {
+  text-decoration: none;
+  color: #7a7a7a;
 }
 
 #footer .row .col-2 .col2-3 h6 {
@@ -355,14 +465,21 @@ body {
 }
 
 #footer .row .col-2 .col2-3 .newsletter input {
+  outline: none;
+  border: none;
   padding: 10px 10px;
   width: 50%;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.22);
 }
 
 #footer .row .col-2 .col2-3 .newsletter button {
   background-color: #f22712;
-  padding: 10px 10px;
+  padding: 10px 30px;
+  outline: none;
   border: none;
   color: #fff;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.22);
 }
 /*# sourceMappingURL=gadget.css.map */

@@ -5,221 +5,543 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/gadget.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <title>Gadgetmart</title>
 </head>
 
 <body>
 
     <!-- NAVBAR............................................................... -->
-<!-- 
-    <nav class="navbar navbar-expand-lg">
-        <div>
-            <img class="logo" src="Assets/Logo.png" alt="logo">
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BRAND</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <img src="Assets/Header_SM_Iocns_FB.png" alt="">
-            <img src="Assets/Header_SM_Iocns_Tweet.png" alt="">
-            <img src="Assets/Header_SM_Iocns_Instagram.png" alt="">
-            <img src="Assets/Header_SM_Iocns_YouTube.png" alt="">
-        
-        </div>
-    </nav> -->
 
-    <!-- <nav class="header navbar navbar-expand-lg">
-    <div class="row">
-        <div class="col-lg-3">
-            <a class="navbar-brand" href="#"><img class="logo" src="Assets/Logo.png" alt="logo"></a>
-        </div>
-        <div class="col-lg-7">
+    <nav class="header navbar navbar-expand-lg">
+        <div class="containerr">
+            <a  href="#"><img class="logo" src="Assets/Logo.png" alt="logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                      <a style="color: white;" class="nav-link" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                      <a style="color: white;" class="nav-link" href="#">BRAND</a>
-                  </li>
-                  <li class="nav-item">
-                      <a style="color: white;" class="nav-link" href="#">BLOG</a>
-                  </li>
-                  <li class="nav-item">
-                      <a style="color: white;" class="nav-link" href="#">CONTACT US</a>
-                  </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" id="home" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">BRAND</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">CONTACT US</a>
+                    </li>
                 </ul>
                 <div class="header-social">
-                  <img src="Assets/Header_SM_Iocns_FB.png" alt="">
-                  <img src="Assets/Header_SM_Iocns_Tweet.png" alt="">
-                  <img src="Assets/Header_SM_Iocns_Instagram.png" alt="">
-                  <img src="Assets/Header_SM_Iocns_YouTube.png" alt="">   
-              </div>
-              </div>
+                    <img src="Assets/Header_SM_Iocns_FB.png" alt="">
+                    <img src="Assets/Header_SM_Iocns_Tweet.png" alt="">
+                    <img src="Assets/Header_SM_Iocns_Instagram.png" alt="">
+                    <img src="Assets/Header_SM_Iocns_YouTube.png" alt="">
+                <!-- </div> -->
+            </div>
         </div>
-        <div class="col-lg-2">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span  class="navbar-toggler-icon"></span>
-              </button>
+    </nav>
+
+    <!-- <nav class="header">
+        <div class="containerr">
+            <a href="#">
+                <img class="logo" src="Assets/Logo.png" alt="logo">
+            </a>
+            <div class="header-navlink">
+                <ul class="">
+                    <li class="nav-">
+                        <a style="color: white;" class="nav-" id="home" href="#">HOME</a>
+                    </li>
+                    <li class="nav-">
+                        <a style="color: white;" class="nav-" href="#">BRAND</a>
+                    </li>
+                    <li class="nav-">
+                        <a style="color: white;" class="nav-" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-">
+                        <a style="color: white;" class="nav-" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav> -->
+
+
+    <!-- CAROUSEL................................................. -->
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/Header_banner_3_for Gadgetmart_homepage.png" class="d-block w-100" alt="...">
+                <div id="textbox" style="width:900px; height:200px;">
+                    <span class="carousel-heading">Smart new device collections</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum amet possimus alias
+                        et dolorem?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Header_banner_1_for Gadgetmart_homepage.png" class="d-block w-100" alt="...">
+                <div id="textbox" style="width:900px; height:200px;">
+                    <span class="carousel-heading">Smart new device collections</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum amet possimus alias
+                        et dolorem?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/Header_banner_2_for Gadgetmart_homepage.png" class="d-block w-100" alt="...">
+                <div id="textbox" style="width:900px; height:200px;">
+                    <span class="carousel-heading">Smart new device collections</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum amet possimus alias
+                        et dolorem?</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <br><br>
+
+
+    <!-- STEPS....................................................... -->
+
+    <div class="containerr">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="box">
+                    <div id="within">
+                        <img style="width: 70px;height: 65px;" src="Assets/Eassy_shipping__4KeyFeatures.png" alt="">
+                        <h6 class="step-text">EASY SHIPPING </h6>
+                        <div class="bottom-text">On All Orders</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="box">
+                    <div id="within">
+                        <img style="width: 70px;height: 65px;" src="Assets/offers_and_Gifts__4KeyFeatures.png" alt="">
+                        <h6 class="step-text">OFFERS AND GIFTS</h6>
+                        <div class="bottom-text">On All Orders</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="box">
+                    <div id="within">
+                        <img style="width: 70px;height: 65px;" src="Assets/24X7_4KeyFeatures.png" alt="">
+                        <h6 class="step-text">24*7 SUPPORT </h6>
+                        <div class="bottom-text">In Safe hands</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="box">
+                    <div id="within">
+                        <img style="width: 70px;height: 65px;" src="Assets/Cash_back_4KeyFeatures.png" alt="">
+                        <h6 class="step-text">MONEY BACK </h6>
+                        <div class="bottom-text">Eassy To Return</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav> -->
+
+    <!-- IMAGES ....................................................... -->
+
+    <div class="just-img">
+        <div class="row">
+            <div class="img col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center">
+                <img src="Assets/Header_bottom_slider_IMG1.png" alt="">
+            </div>
+            <div class="img col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center">
+                <img src="Assets/Header_bottom_slider_IMG2.png" alt="">
+            </div>
+            <div class="img col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center">
+                <img src="Assets/Header_bottom_slider_IMG3.png" alt="">
+            </div>
+            <div class="img col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 d-flex justify-content-center">
+                <img src="Assets/Header_bottom_slider_IMG4.png" alt="">
+            </div>
+        </div>
+</div>
+
+    <br><br>
+
+    <!-- FESTIVAL OFFERS........................................................ -->
+
+    <section class="containerr">
+        <div id="box">
+            <div id="content">
+                <div class="text-content">FESTIVAL OFFERS</div>
+            </div>
+            <div id="shadow"></div>
+        </div>
+        <div class="row">
+            <div class="col1 col-xs-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                <img class="blue-triangle" src="Assets/Festival_offer_Product _Box_Rectangel_1.png" alt="">
+                    <!-- <div class="blu-triangle"></div> -->
+
+
     
-
-<nav class="header navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#"><img class="logo" src="Assets/Logo.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span  class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a style="color: white;" class="nav-link" id="home" href="#">HOME</a>
-             <div class="row drop-down">
-            <div class="col dropdown-content">
-                <a href="#">list 123</a>
-                <a href="#">list 123</a>
-                <a href="#">list 123</a>
-                <a href="#">list 123</a>
-                <a href="#">list 123</a>
-                <a href="#">list 123</a>
+                <img class="over-image" src="Assets/Festival_offer_Product _Laptop.png" alt="">
+                <span class="over-text">Laptops Upto 25% Offer</span>
             </div>
-             </div>
-        </li>
-        <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="#">BRAND</a>
-        </li>
-        <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="#">BLOG</a>
-        </li>
-        <li class="nav-item">
-            <a style="color: white;" class="nav-link" href="#">CONTACT US</a>
-        </li>
-      </ul>
-      <div class="header-social">
-        <img src="Assets/Header_SM_Iocns_FB.png" alt="">
-        <img src="Assets/Header_SM_Iocns_Tweet.png" alt="">
-        <img src="Assets/Header_SM_Iocns_Instagram.png" alt="">
-        <img src="Assets/Header_SM_Iocns_YouTube.png" alt="">   
-    </div>
-    </div>  
-  </nav>
+            <div class="col3 col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
 
-<!-- CAROUSEL................................................. -->
-  <!-- <div>
-      <img class="carousel-image" src="Assets/Header_banner_3_for Gadgetmart_homepage.png" alt="">
-  </div> -->
-
-
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="Assets/Header_banner_3_for Gadgetmart_homepage.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="Assets/Header_banner_3_for Gadgetmart_homepage.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="Assets/Header_banner_3_for Gadgetmart_homepage.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
-  <!-- STEPS....................................................... -->
-<div class="container steps" id="container">
-    <div class="row">
-        <div class="col-3">
-            <div id="within">
-                <img src="Assets/Eassy_shipping__4KeyFeatures.png" alt="">
-                <h6 class="step-text">EASY SHIPPING</h6>
+            <div class="col2 col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <img class="blue-triangle" src="Assets/Festival_offer_Product _Box_Square_1.png" alt="">
+                <img class="over-image" src="Assets/Festival_offer_Product _Printer.png" alt="">
+                <span class="over-text">Printers</span>
             </div>
-            <img class="step" src="Assets/4KeyFeatures_Bg_with_dropShadow.png" alt="">
-            
         </div>
-        <div class="col-3">
-            <div id="within">
-                <img src="Assets/offers_and_Gifts__4KeyFeatures.png" alt="">
-                <h6 class="step-text">OFFERS AND GIFTS</h6>
+        <br><br>
+
+        <div class="row">
+            <div class="col1 col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                <img class="triangle" src="Assets/Festival_offer_Product _Box_Square_2.png" alt="">
+                <img class="over-image" src="Assets/Festival_offer_Product _watche.png" alt="">
+                <span class="over-text">Watches</span>
             </div>
-            <img class="step" src="Assets/4KeyFeatures_Bg_with_dropShadow.png" alt="">
-        </div>
-        <div class="col-3">
-            <div id="within">
-                <img src="Assets/24X7_4KeyFeatures.png" alt="">
-                <h6 class="step-text">24*7 SUPPORT</h6>
+            <div class="col3 col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+
+            <div class="col2 col-xs-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                <img class="triangle" src="Assets/Festival_offer_Product _Box_Rectangel_2.png" alt="">
+                <img class="over-image" src="Assets/Festival_offer_Product _CellPhone.png" alt="">
+                <span class="over-text">Mobiles 20% CashBack on OnlinePayment</span>
             </div>
-            <img class="step" src="Assets/4KeyFeatures_Bg_with_dropShadow.png" alt="">
         </div>
-        <div class="col-3">
-            <div id="within">
-                <img src="Assets/Cash_back_4KeyFeatures.png" alt="">
-                <h6 class="step-text">CASH BACK</h6>
-            </div>
-            <img class="step" src="Assets/4KeyFeatures_Bg_with_dropShadow.png" alt="">
-        </div>
-        </div>
+
+    </section>
+
+    <br><br>
+
+    <div class="blu-triangle">
+        
     </div>
 
-<!-- IMAGES ....................................................... -->
- <div class="just-img">
-    <div class="row"> 
-        <div class="img col-3">
-            <img src="Assets/Header_bottom_slider_IMG1.png" alt="">
-        </div>
-        <div class="img col-3">
-            <img src="Assets/Header_bottom_slider_IMG2.png" alt="">
-        </div>
-        <div class="img col-3">
-            <img src="Assets/Header_bottom_slider_IMG3.png" alt="">
-        </div>
-        <div class="img col-3">
-            <img src="Assets/Header_bottom_slider_IMG4.png" alt="">
-        </div>
-        </div>
- </div>
+    <br><br><br><br>
+
+    <!-- TOP SELLING CATEGORIES................................... -->
+
+    <section class="selling-cat">
+        <div class="containerr">
+            <br><br>
+            <div id="box">
+                <div id="content">
+                    <div class="text-content">TOP SELLING CATEGORIES</div>
+                </div>
+                <div id="shadow"></div>
+            </div>
+
+            <div class="selection">
+
+                <div class="row">
+                    <div class="flip col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="front">
+                            <h2>Smart Gadgets</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Smart Gadgets</h2>
+                            <ul>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flip col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="front">
+                            <h2>Sports Gadgets</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Sports Gadgets</h2>
+                            <ul>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flip col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="front">
+                            <h2>Mobiles & Accesories</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Mobiles & Accesories</h2>
+                            <ul>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+                <div class="row">
+                    <div class="flip col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="front">
+                            <h2>Bluetooth Gadgets</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Bluetooth Gadgets</h2>
+                            <ul>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flip col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="front">
+                            <h2>Gaming Gadgets</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Gaming Gadgets</h2>
+                            <ul>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flip col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                        <div class="front">
+                            <h2>Laptops & Tabs</h2>
+                        </div>
+                        <div class="back">
+                            <h2>Laptops & Tabs</h2>
+                            <ul>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                                <li>Drones</li>
+                                <li>Power bank</li>
+                                <li>Tripods</li>
+                                <li>Shoes</li>
+                                <li>Smart watches</li>
+                                <li>Mini portable Projectors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-<!-- jQuery and JS bundle w/ Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-</script>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARALAX IMAGE......................................... -->
+
+    <section id="paralax">
+        <div class="prlx-content">
+            <div class="prlx-head">GADGET MART</div>
+            <p class="prlx-md">Where We Can UPDATES To TREND</p>
+            <p class="prlx-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque hic facilis,
+                provident distinctio, nemo quasi a officiis cupiditate atque vitae debitis, earum dignissimos dolor nam
+                est molestiae culpa! Non nemo, assumenda sint necessitatibus soluta illo atque dolores porro similique!
+            </p>
+        </div>
+    </section>
+
+    <!-- TOP KIDS PRODUCT....................................... -->
+    
+    <section id="top-kids">
+        <br><br>
+        <div class="containerr">
+            <div id="box">
+                <div id="content">
+                    <div class="text-content">TOP KIDS PRODUCT</div>
+                </div>
+                <div id="shadow"></div>
+            </div>
+            <div class="row">
+                <div class="kids-box col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center">
+                    <img style="width: 750px; height: 300px;" src="Assets/Top_kid_product_banner1.png" alt="">
+
+                    <div class="kids-content">
+                        <div class="kids-text">Teddy</div>
+                        <p>for the birthday gift</p>
+                    </div>
+                </div>
+                <div class="kids-box col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-center">
+                    <img style="width: 750px; height: 300px;" src="Assets/Top_kid_product_banner2.png" alt="">
+
+                    <div class="kids-content">
+                        <div class="kids-text">Kids</div>
+                        <p>Accesories sales upto 20% offer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <br><br>
+    <!-- FOOTER ......................................................... -->
+
+    <section id="footer">
+        <div class="row">
+            <div class="col-1 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex justify-content-center">
+
+                <div class="cont">
+                    <div class="col1-text1">We are team of designers and developers that create high quality magento,
+                        Prestashop</div>
+
+
+                    <div class="call">
+                        <img src="Assets/FooterCall Support_Icon.png" alt="">
+                        <div class="help">
+                            <div> NEED HELP?</div>
+                            <div>(+800) 458 567, (+911) 354 227</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-media">
+                        <img src="Assets/Header_SM_Iocns_FB.png" alt="">
+                        <img src="Assets/Header_SM_Iocns_Tweet.png" alt="">
+                        <img src="Assets/Header_SM_Iocns_Instagram.png" alt="">
+                        <img src="Assets/Header_SM_Iocns_YouTube.png" alt="">
+                    </div>
+
+                    <div class="copy">Powered by FUNPLACE ENTERPRICES &copy; 2020</div>
+
+                </div>
+            </div>
+
+
+            <div class="col-2 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                <div class="row">
+                    <div class="col2-1 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
+
+
+                        <ul>
+                            <h6>Information</h6>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col2-2 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
+
+
+                        <ul>
+                            <h6>Customer Service</h6>
+                            <li><a href="#">Site Map</a></li>
+                            <li><a href="#">Wish List</a></li>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Gift Certificates</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                            <li><a href="#">Specials</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class=" col2-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                        <h6>Join Our Newsletter</h6>
+                        <div>Sign Up for our E-mail to get latest news.</div>
+                        <div class="newsletter">
+                            <form action="">
+                                <input type="text" placeholder="Enter your E-mail"><button>Submit</button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <a href="#"> <img src="Assets/gadgetsmart HOme page Footer apple Download_icon.png"
+                                    alt=""></a>
+                            <a href="#"><img src="Assets/gadgetsmart HOme page Footer google_play_Download_icon.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
 
 </body>
 
 </html>
-
